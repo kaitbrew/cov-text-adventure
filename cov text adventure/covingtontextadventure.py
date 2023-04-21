@@ -53,7 +53,7 @@ while confstat != "1":
      print(stats)
      confstat=input("Please enter '1' or '2': \nIs this who you want to be?\n1. Yes\n2. No\n>")
 if confstat == "1":
-    print("As it is written, so it shall be done.\n")
+    print("As it is written, so it shall be done.")
     if str==3:
        print("Strongboi eh?\n")
     if spe==3:
