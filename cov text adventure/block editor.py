@@ -1,49 +1,10 @@
-""" 
-def assign_attributes():
-    attributes = {'Strength': None, 'Speed': None, 'Smarts': None}
-    values = set(['1', '2', '3'])
-    print("Please assign values 1-3 to the following attributes:")
-    for attribute in attributes:
-        value = input(f"{attribute}: ").title()
-        while value not in values:
-            if value not in values:
-                value = input(f"Invalid input. Please enter a value between 1 and 3 for {attribute}: ")
-            else:
-                value = input(f"Error: {value} has already been used. Please enter a different value for {attribute}: ")
-        values.remove(value)
-        attributes[attribute] = int(value)
-    return attributes
-
-stats=assign_attributes()
-print(stats) 
-
-
-
-def assign_attributes():
-    attributes = {'Strength': None, 'Speed': None, 'Smarts': None}
-    values = {}
-    print("Please assign values 1-3 to the following attributes:")
-    for attribute in attributes:
-        value = input(f"{attribute}: ").title()
-        while value not in values:
-            if value not in values:
-                value = input(f"Invalid input. Please enter a value between 1 and 3 for {attribute}: ")
-            else:
-                value = input(f"Error: {value} has already been used. Please enter a different value for {attribute}: ")
-        values.remove(value)
-        attributes[attribute] = int(value)
-    return attributes
-
-stats=assign_attributes()
-print(stats) 
-"""
-
-def assign_values():
+#SETTING UP STATS
+def assign_stats():
     values = {}
     print("Please assign values 1-3 to the following attributes:")
     for attribute in ["Strength", "Speed", "Smarts"]:
         while True:
-            value = input(f"{attribute.capitalize()}: ")
+            value = input(f"{attribute.capitalize()}:\n>")
             if value.isdigit() and 1 <= int(value) <= 3 and int(value) not in values.values():
                 values[attribute] = int(value)
                 break
@@ -54,6 +15,32 @@ def assign_values():
             else:
                 print('Invalid input. Please use only whole numbers between 1-3.')
     return values
-stats=assign_values()
+
+#ASSIGN VARIABLES TO EACH STAT
+stats=assign_stats()
+str=stats["Strength"]
+spe=stats["Speed"]
+sma=stats["Smarts"]
 print(stats)
-print("Is this who you want to be?")
+
+#CONFIRM STATS
+confstat = input("Is this who you want to be?\n1. Yes\n2. No\n>")
+while confstat != "1": 
+    if confstat == "2":
+     print("Let's try again!")
+     assign_stats()
+     print(stats)
+     confstat=input("Is this who you want to be?\n1. Yes\n2. No\n>")
+    else:
+     print("Invalid input.")
+     print(stats)
+     confstat=input("Please enter '1' or '2': \nIs this who you want to be?\n1. Yes\n2. No\n>")
+
+if confstat == "1":
+    print("As it is written, so it shall be done.")
+    if str==3:
+       print("You treat your body, and in return, you expect it to treat you. Long hours in the gym mean that you can lift more, run faster, jump higher.")
+    if spe==3:
+       print("Fast type eh?\n")
+    if sma==3:
+       print("Big brain guy eh?\n")

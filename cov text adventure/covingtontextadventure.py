@@ -55,7 +55,7 @@ while confstat != "1":
 if confstat == "1":
     print("As it is written, so it shall be done.")
     if str==3:
-       print("Strongboi eh?\n")
+       print("You treat your body, and in return, you expect it to treat you. Long hours in the gym mean that you can lift more, run faster, jump higher.")
     if spe==3:
        print("Fast type eh?\n")
     if sma==3:
