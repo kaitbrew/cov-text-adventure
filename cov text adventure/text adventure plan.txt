@@ -1,0 +1,2 @@
+ask name
+3 stats: strength, 
