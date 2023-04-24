@@ -94,6 +94,7 @@ if confstat == "1":
        prints("Big brain guy eh?\n")
 
 #PRINT 3 PERIODS FOR LOADING
+print("\n")
 for i in range(3):
     print(".", end="", flush=True)
     time.sleep(2)
