@@ -26,7 +26,6 @@ while confname != "1":
      confname = input("\n>")
 if confname == "1":
     prints(f"Good morning, {name}.\n")
-prints("Now we will determine your strengths and weaknesses. There are 3 stats: Strength, Speed and Smarts. Each has its own advantages. Assign the numbers to each attribute according to how much you want your character to be focused in it.\nFor example, if you want a very strong character, you will have to sacrifice on Speed or Smarts, because each value can be used only once. To create a strong character that is lacking in speed, assign Strength to 3, Speed to 1, Smarts to 2.\n")
 
 #SETTING UP STATS
 def assign_stats():
@@ -46,6 +45,11 @@ def assign_stats():
             else:
                 prints('Invalid input. Please use only whole numbers between 1-3.\n')
     return values
+
+statx=open('statexp.txt','r')
+stattxt = statx.read()
+prints(f"\n{stattxt}\n")
+statx.close
 
 #SETTING UP STATS
 def assign_stats():
@@ -89,18 +93,18 @@ if confstat == "1":
     if str==3:
        prints("You treat your body, and in return, you expect it to treat you. Long hours in the gym mean that you can lift more, run faster, jump higher.\n")
     if spe==3:
-       prints("\n")
+       prints("You are practiced in sleight of hand. Your fingers (and the rest of your body) move deftly and precisely.\n")
     if sma==3:
-       prints("Big brain guy eh?\n")
+       prints("Your mind is sharp, and you intend to keep it that way. You devour books and love solving puzzles.\n")
 
-#PRINT 3 PERIODS FOR LOADING
+#PRINT 3 PERIODS FOR LOADING EFFECT
 print("\n")
-for i in range(3):
+for i in range(5):
     print(".", end="", flush=True)
-    time.sleep(2)
+    time.sleep(1.5)
 
 #INTRO PAGE
 intro=open('intro.txt','r')
 introtxt = intro.read()
-prints(f"\n"+introtxt)
+prints(f"\n{introtxt}\n")
 intro.close
