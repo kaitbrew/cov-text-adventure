@@ -28,7 +28,7 @@ confstat = input("Is this who you want to be?\n1. Yes\n2. No\n>")
 while confstat != "1": 
     if confstat == "2":
      print("Let's try again!")
-     assign_stats()
+     stats=assign_stats()
      print(stats)
      confstat=input("Is this who you want to be?\n1. Yes\n2. No\n>")
     else:
