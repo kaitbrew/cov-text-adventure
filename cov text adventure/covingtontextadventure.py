@@ -1,6 +1,7 @@
 #SLOW TEXT EFFECT
 import time
-def prints(text, delay=0.01):
+import os
+def prints(text, delay=0.015):
     for char in text:
         if char == '\n':
             print()
@@ -45,13 +46,12 @@ def assign_stats():
             else:
                 prints('Invalid input. Please use only whole numbers between 1-3.\n')
     return values
-
+#STATS EXPLANATION
 statx=open('statexp.txt','r')
 stattxt = statx.read()
 prints(f"\n{stattxt}\n")
 statx.close
-
-#SETTING UP STATS
+#ASSIGN STATS
 def assign_stats():
     values = {}
     prints("Please assign values 1-3 to the following attributes:\n")
@@ -97,14 +97,18 @@ if confstat == "1":
     if sma==3:
        prints("Your mind is sharp, and you intend to keep it that way. You devour books and love solving puzzles.\n")
 
-#PRINT 3 PERIODS FOR LOADING EFFECT
-print("\n")
+#PRINT PERIODS FOR LOADING EFFECT
 for i in range(5):
     print(".", end="", flush=True)
     time.sleep(1.5)
+
+#CLEAR CONSOLE
+os.system('cls')
 
 #INTRO PAGE
 intro=open('intro.txt','r')
 introtxt = intro.read()
 prints(f"\n{introtxt}\n")
 intro.close
+#INTRO OPTIONS
+prints("1. Reminisce \n2. What time is it? Check your phone.")

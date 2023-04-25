@@ -1,9 +1,19 @@
+#SLOW TEXT EFFECT
 import time
+import os
+def prints(text, delay=0.015):
+    for char in text:
+        if char == '\n':
+            print()
+        else:
+            print(char, end='', flush=True)
+            time.sleep(delay)
 
-filename = "intro.txt"
-with open(filename, "r") as file:
-    text = file.read()
-
-for char in text:
-    print(char, end='', flush=True)
-    time.sleep(0.05)
+#INTRO PAGE
+intro=open('intro.txt','r')
+introtxt = intro.read()
+prints(f"\n{introtxt}\n")
+intro.close
+#INTRO OPTIONS
+prints("1. Reminisce \n2. What time is it? Check your phone.\n")
+iselect=input(">")
