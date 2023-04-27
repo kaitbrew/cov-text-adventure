@@ -34,26 +34,26 @@ $(document).ready(function () {
         //external links
         //customer click tag here
         $('#logo')[0].addEventListener("click", function (e) {
-            openExternalLinkFull(e, "https://www.trodelvy.com/");
+            openExternalLinkFull(e, "https://www.neopets.com/");
         }, false);
 
         $('#button')[0].addEventListener("click", function (e) {
-            openExternalLinkFull(e, "https://www.trodelvy.com/patient/mtnbc/how-it-works");
+            openExternalLinkFull(e, "https://www.neopets.com");
         }, false);
 
 
 
         //pdf links
         $('#pi')[0].addEventListener("click", function (e) {
-            openExternalPDF(e, "https://www.trodelvy.com/-/media/project/trodelvy/patient/files/trodelvy_important_facts.pdf");
+            openExternalPDF(e, "https://neopets.com");
         }, false);
 
         $('.footer-container')[0].addEventListener("click", function (e) {
-            openExternalPDF(e, "https://www.trodelvy.com/-/media/project/trodelvy/patient/files/trodelvy_important_facts.pdf");
+            openExternalPDF(e, "https://neopets.com");
         }, false);
 
         $('.company-logos')[0].addEventListener("click", function (e) {
-            openExternalLinkFull(e, "https://www.gilead.com/");
+            openExternalLinkFull(e, "https://neopets.com");
         }, false);
 
     }

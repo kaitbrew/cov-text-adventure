@@ -1,0 +1,57 @@
+html,
+body {
+    position: relative;
+    display: block;
+    margin: 0px;
+    /* Always clear margin and padding on outer elements */
+    padding: 0px;
+    width: 100%;
+    /* Use percentages with expanding ads */
+    height: 100%;
+
+    font-family: Roboto, Arial;
+
+    transition-property: background-color;
+    transition-duration: 0.25s;
+    transition-timing-function: ease-in-out;
+}
+
+#container {
+    position: relative;
+    background: url(../assets/yourBrandHere.png);
+    left: 0;
+    top: 0;
+    width: 300px;
+    height: 250px;
+    z-index: 1;
+}
+
+#footerLink {
+    position: absolute;
+    left: 110px;
+    bottom: 0;
+    width: 75px;
+    height: 25px;
+    z-index: 100;
+    cursor: pointer;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    background-color:transparent;
+
+}
+
+#main-link {
+    position: absolute;
+    left: 50px;
+    bottom: 33px;
+    width: 200px;
+    height: 160px;
+    z-index: 100;
+    cursor: pointer;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    background-color:transparent;
+}
+
