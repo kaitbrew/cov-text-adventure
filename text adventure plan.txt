@@ -1,0 +1,25 @@
+*when passing or failing a check, display related attribute
+*when special event happens due to tag, display related tag
+
+ask name, use throughout
+3 stats: strength, speed, smarts (ranked 1-3)
+Money:3
+
+Card structure:
+Print card text, pulled from .txt file (create directory)
+List options in code and link to other cards by entering number 1-5 (for example)
+Input+1 to account for list numbering
+
+	
+introcd: it is saturday. You wake up in dirty apartment, smells like cigs, headache, realize you have slept late for work. You panic. Voicemail says you have been fired. Not surprising. You take the day to feel sorry for yourself. (your stats are currently reduced)
+-eat and shower (Etshwrcd) (+1 stats)
+-(if smarts 3) check job
+-take a walk (despite your body’s protests) (warning that stats will need to be individually increased
+
+
+X command e.g. “x desk” “x bed” to examine
+
+
+Etshwrcd: you decide to take care of yourself, against all odds. 
+
+

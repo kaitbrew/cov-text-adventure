@@ -1,0 +1,4 @@
+Now we will determine your strengths and weaknesses. There are 3 stats: Strength, Speed and Smarts. Each has its own advantages. 
+
+Assign numbers to each attribute according to how much you want your character to be focused in it.
+If you want a very Strong character, you will have to sacrifice on Speed or Smarts, because each value can be used only once. For example, to create a Strong character who is lacking in Speed, assign Strength to 3, Speed to 1, Smarts to 2.
